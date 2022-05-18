@@ -127,7 +127,7 @@ const Login: (props: IProps) => JSX.Element = ({ location }) => {
           <div className={style.companyInfo}>
             <div className={style.logoContainer}>
               <div className={style.imageBox}>
-                <img alt="logo" src={`/assets/logo.svg?current=${timeStamp}`} />
+                <img alt="logo" src={require(`../../assets/logo.svg`)} />
               </div>
               <span className={style.logoTitle}>{
                 intl.formatMessage({

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Redirect } from 'umi'
 import MainLayout from './main'
 

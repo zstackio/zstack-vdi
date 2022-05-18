@@ -25,7 +25,7 @@ const VMPage: React.FC = () => {
 
   const vmList = useMemo(() => {
     const list = _.get(response, 'inventories', [])
-    const connectableList = _.filter(list, vm => vm.state === 'Running' || vm.state === 'Stopped')
+    const connectableList = _.filter(list, vm => _.includes(['Running', 'Stopped'], vm?.state))
 
     setOtherCount(list.length - connectableList.length)
 
@@ -131,11 +131,17 @@ const VMPage: React.FC = () => {
     const hostIp: string = _.get(consoleResult, ['data', 'hostIp'], '')
     const port: number = _.get(consoleResult, ['data', 'port'])
 
+
+    console.log('rdpEnable', rdpEnable)
+    console.log('protocol', protocol)
+
     let vvFile = ''
     let fileType = ''
+
     if (rdpEnable) {
+      fileType = 'rdp'
       vvFile = createRdp(vmIp, usbRedirectEnable)
-    } else if (protocol === 'spice') {
+    } else if (_.includes(['vncAndSpice', 'spice'], protocol)) {
       fileType = 'spice'
       vvFile = createSpiceVV(hostIp, port)
     } else {
@@ -153,9 +159,9 @@ const VMPage: React.FC = () => {
       //  Spice Type
       downloadFile('console.vv', vvFile)
     }
-    
+
   }
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.desktopContainer}>
@@ -163,7 +169,7 @@ const VMPage: React.FC = () => {
           <span className={styles.text}>{
             intl.formatMessage({
               id: 'vm.title',
-              defaultMessage: '云桌面终端'
+              defaultMessage: '云桌面'
             })
           }</span>
           <Button className={styles.button} icon={<img src={require('../../assets/refresh.png')} />} onClick={() => {
@@ -185,7 +191,7 @@ const VMPage: React.FC = () => {
         <div className={styles.description}>{
           intl.formatMessage({
             id: 'vdi.description',
-            defaultMessage: '这是一段简介，这是一段简介，这是一段简介，这是一段简介，这是一段简介，这是一段简介，这是一段简介'
+            defaultMessage: '通过定制盒子，结合客户端软件灵活选择SPICE、RDP、VNC等协议，兼容多种USB设备重定向，从而带来适配场景的最佳虚拟桌面体验。'
           })
         }
         </div>
@@ -193,18 +199,18 @@ const VMPage: React.FC = () => {
         <Divider />
 
         {
-          otherCount > 0 && 
+          otherCount > 0 &&
           <Alert className={styles.alert} message={intl.formatMessage({
             id: 'vm.Alert',
-            defaultMessage: '检测到存在已暂停/未知/停止/故障状态的主机，VDI 仅获取和展示运行中与停止状态的主机，如需连接其他状态主机，请至 ZStack Cloud 调整主机状态。（文本待定）'
+            defaultMessage: '检测到部分云主机处于暂停/未知/故障状态。若需连接这些云主机，请至 ZStack Cloud 调整相应云主机状态至运行中或已停止。'
           })} type="info" showIcon closable/>
         }
 
         { vmList?.length > 0 &&
         <div className={styles.vmList}>
           {
-            vmList?.map(vm => 
-              <div className={styles.vmCard}>
+            vmList?.map((vm, index) =>
+              <div className={styles.vmCard} key={index}>
                 <div className={styles.vmImage}>
                   <img src={require('../../assets/computer.png')}/>
                 </div>
@@ -216,7 +222,7 @@ const VMPage: React.FC = () => {
                     defaultMessage: '运行中'
                   }) : intl.formatMessage({
                     id: 'state.Stopped',
-                    defaultMessage: '已停止'
+                    defaultMessage: '停止'
                   })}
                   <div className={styles.ipdivider} />
                   {getDefaultIp(vm)}
@@ -235,7 +241,8 @@ const VMPage: React.FC = () => {
                     {intl.formatMessage({
                     id: 'stop',
                     defaultMessage: '停止'
-                  })}</Button>
+                  })}
+                  </Button>
                   <Button className={styles.actionButton} disabled={vm?.state !== 'Running'} onClick={() => connect(vm, vm?.name)}>
                     <SVG src={require('../../assets/connect.svg')}/>
                       {intl.formatMessage({

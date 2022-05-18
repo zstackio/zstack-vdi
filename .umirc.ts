@@ -11,7 +11,7 @@ export default defineConfig({
   },
   proxy: {
     '/zstack/v1': {
-      'target': 'http://172.20.12.207:8080',
+      'target': 'http://localhost:8080', // MN 地址
       'changeOrigin': true,
     },
   },
