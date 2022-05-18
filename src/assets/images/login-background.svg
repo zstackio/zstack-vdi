@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板备份 3</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DBDDE0" offset="0%"></stop>
+            <stop stop-color="#EFF0F2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#DBDDE0" offset="0%"></stop>
+            <stop stop-color="#EFF0F2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#DBDDE0" offset="0%"></stop>
+            <stop stop-color="#EFF0F2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="画板备份-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F5F7FA" x="0" y="0" width="1440" height="900"></rect>
+        <rect id="矩形" fill="#F5F7FA" x="0" y="0" width="1440" height="900"></rect>
+        <polygon id="矩形" fill="url(#linearGradient-1)" opacity="0.400000006" points="957.44307 0 1440 3.02924352e-13 1439.5 362 686 362"></polygon>
+        <polygon id="矩形" fill="url(#linearGradient-2)" opacity="0.400000006" points="1439.5 0 1439.5 900 719.5 900"></polygon>
+        <path d="M135,120 C549.213562,120 885,455.786438 885,870 C885,880.049661 884.802341,890.053157 884.410697,900.006811 L-0.000932388986,900.002 L-0.00362450316,132.118047 C43.7901598,124.157539 88.9095573,120 135,120 Z" id="形状结合" fill="url(#linearGradient-3)" opacity="0.200000003"></path>
+        <path d="M135,410 C389.050985,410 595,615.949015 595,870 C595,880.079215 594.675831,890.082716 594.03735,900.000647 L-0.000493110041,900 L-0.00649311004,430.129981 C42.6853049,417.042719 88.0201948,410 135,410 Z" id="形状结合" fill="#FFFFFF" opacity="0.400000006"></path>
+    </g>
+</svg>

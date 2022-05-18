@@ -1,0 +1,25 @@
+{
+  "login": "Login",
+  "loginTitle": "Welcome to ZStack VDI",
+  "welcome.login": "Welcome",
+  "bannerTitle": "ZStack VDI Management Platform",
+  "logout": "Logout",
+  "vm.title": "Cloud Desktop",
+  "refresh": "Refresh",
+  "vdi.description": "ZStack VDI functions based on a custom box of hardware devices and client software. It provides SPICE, RDP, and VNC connection protocols and allows redirection of multiple USB devices, enabling fascinating on-demand virtual desktop user experiences.",
+  "state": {
+    "Running": "Running",
+    "Stopped": "Stopped"
+  },
+  "start": "Start",
+  "stop": "Stop",
+  "connect": "Connect",
+  "vm.Alert": "Some VM instances are detected in Paused, Unknown, or Crashed status. If you need to connect to these VM instances, go to ZStack Cloud and set their status to Running or Stopped.",
+  "noData": "No Data",
+  "login.footer.browser.recommend": "For better experience, use Chrome 62 or later.",
+  "login.cannotConnectToServer": "Unable to connect to the server. Contact the administrator.",
+  "login.maxSession": "The maximum number of login sessions is reached.",
+  "login.denyAccessError": "The current IP address is denied access.",
+  "login.loginError": "Wrong username or password. Please try again.",
+  "console.connect.alert": "The current console connection mode is VNC. The VM instance is inaccessible."
+}

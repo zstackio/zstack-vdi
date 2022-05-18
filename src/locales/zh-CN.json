@@ -1,0 +1,25 @@
+{
+  "login": "登录",
+  "loginTitle": "欢迎使用 ZStack VDI 管理平台",
+  "welcome.login": "欢迎登录",
+  "bannerTitle": "ZStack VDI 管理平台",
+  "logout": "退出",
+  "vm.title": "云桌面终端",
+  "refresh": "刷新",
+  "vdi.description": "这是一段简介，这是一段简介，这是一段简介，这是一段简介，这是一段简介，这是一段简介，这是一段简介",
+  "state": {
+    "Running": "运行中",
+    "Stopped": "已停止"
+  },
+  "start": "启动",
+  "stop": "停止",
+  "connect": "连接",
+  "vm.Alert": "检测到存在已暂停/未知/停止/故障状态的主机，VDI 仅获取和展示运行中与停止状态的主机，如需连接其他状态主机，请至 ZStack Cloud 调整主机状态。（文本待定）",
+  "noData": "暂无数据",
+  "login.footer.browser.recommend": "为了获取更好的产品体验，请使用Chrome 62 及以上版本的浏览器",
+  "login.cannotConnectToServer": "无法连接服务器，请联系管理员",
+  "login.maxSession": "超出最大登录会话数",
+  "login.denyAccessError": "当前IP已被限制访问登录",
+  "login.loginError": "用户名或密码错误，请重新输入",
+  "console.connect.alert": "当前控制台连接模式: VNC, 无法连接该云主机"
+}
