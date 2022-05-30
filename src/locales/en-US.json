@@ -12,6 +12,7 @@
   "loginTitle": "Welcome to ZStack VDI",
   "logout": "Logout",
   "noData": "No Data",
+  "noIpaddress": "No IP address",
   "refresh": "Refresh",
   "start": "Start",
   "state.Running": "Running",

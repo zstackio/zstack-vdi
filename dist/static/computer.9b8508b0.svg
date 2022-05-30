@@ -1,0 +1,64 @@
+?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illus/icon/computer</title>
+    <defs>
+        <path d="M3,0 L14.4,0 C14.4,3.86206854 15.4,6.66206854 17.4,8.4 L0,8.4 L0,8.4 C2,6.80466081 3,4.00466081 3,0 Z" id="path-1"></path>
+        <path d="M1.5,0 L25.8,0 C26.6284271,0 27.3,0.671572875 27.3,1.5 C27.3,2.32842712 26.6284271,3 25.8,3 L1.5,3 C0.671572875,3 0,2.32842712 0,1.5 C0,0.671572875 0.671572875,0 1.5,0 Z" id="path-3"></path>
+        <circle id="path-5" cx="1.2" cy="1.2" r="1.2"></circle>
+        <path d="M2.4,0 L49.2,0 C50.5254834,0 51.6,1.0745166 51.6,2.4 L51.6,30.6 L0,30.6 L0,2.4 C0,1.0745166 1.0745166,0 2.4,0 Z" id="path-7"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-314.000000, -70.000000)">
+            <g id="编组" transform="translate(314.000000, 70.000000)">
+                <g id="编组-3备份" transform="translate(4.200000, 6.900000)">
+                    <g id="矩形" transform="translate(17.099999, 35.400000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" fill="#C8CACD" xlink:href="#path-1"></use>
+                        <rect fill="#96989B" mask="url(#mask-2)" x="1.20000055" y="1.2" width="15.3" height="1.2"></rect>
+                    </g>
+                    <g id="矩形" transform="translate(12.000000, 43.200000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="蒙版" fill="#DBDDE0" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M2.4,0 L49.2,0 C50.5254834,0 51.6,1.0745166 51.6,2.4 L51.6,34.2 C51.6,35.5254834 50.5254834,36.6 49.2,36.6 L2.4,36.6 C1.0745166,36.6 0,35.5254834 0,34.2 L0,2.4 C0,1.0745166 1.0745166,0 2.4,0 Z" id="矩形" fill="#DBDDE0"></path>
+                    <g id="椭圆形备份-6" transform="translate(24.600000, 31.800000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="蒙版" fill="#C8CACD" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="矩形备份-16">
+                        <g id="路径-2">
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="蒙版" fill="#181A1D" xlink:href="#path-7"></use>
+                            <polygon fill="#4A4C4F" mask="url(#mask-8)" points="47.4 -6.9 -12.6 53.1 -12.6 -6.9"></polygon>
+                        </g>
+                        <polygon fill="#FFFFFF" points="2.4 3 49.2 3 49.2 27.6 2.4 27.6"></polygon>
+                    </g>
+                    <g id="编组-5" transform="translate(6.000000, 7.200000)">
+                        <g id="编组" transform="translate(0.000000, 4.800000)">
+                            <path d="M1.2,0 L17.1,0 C17.7627417,0 18.3,0.5372583 18.3,1.2 L18.3,10.2 C18.3,10.8627417 17.7627417,11.4 17.1,11.4 L1.2,11.4 C0.5372583,11.4 0,10.8627417 0,10.2 L0,1.2 C0,0.5372583 0.5372583,0 1.2,0 Z" id="矩形备份-3" fill="#FFB53F"></path>
+                            <polygon id="路径-10" fill="#FFFFFF" points="5.94372104 5.4 8.7 8.4 3.3 8.4"></polygon>
+                            <polygon id="路径-14" fill="#FFFFFF" points="6.6 8.4 10.8465397 3.6 15.6 8.4"></polygon>
+                            <circle id="椭圆形" fill="#FFFFFF" cx="7.2" cy="3" r="1"></circle>
+                        </g>
+                        <g id="编组-2" transform="translate(20.700000, 5.100000)" fill="#F0F2F5">
+                            <path d="M1.2,0 L10.7898305,0 C11.4525722,0 11.9898305,0.5372583 11.9898305,1.2 C11.9898305,1.8627417 11.4525722,2.4 10.7898305,2.4 L1.2,2.4 C0.5372583,2.4 0,1.8627417 0,1.2 C0,0.5372583 0.5372583,0 1.2,0 Z" id="矩形"></path>
+                            <path d="M1.2,8.4 L13.1898305,8.4 C13.8525722,8.4 14.3898305,8.9372583 14.3898305,9.6 C14.3898305,10.2627417 13.8525722,10.8 13.1898305,10.8 L1.2,10.8 C0.5372583,10.8 0,10.2627417 0,9.6 C0,8.9372583 0.5372583,8.4 1.2,8.4 Z" id="矩形备份-2"></path>
+                            <path d="M1.2,4.2 L17.7,4.2 C18.3627417,4.2 18.9,4.7372583 18.9,5.4 C18.9,6.0627417 18.3627417,6.6 17.7,6.6 L1.2,6.6 C0.5372583,6.6 0,6.0627417 0,5.4 C0,4.7372583 0.5372583,4.2 1.2,4.2 Z" id="矩形备份"></path>
+                        </g>
+                        <g id="编组-4" transform="translate(8.700000, 0.000000)" fill="#DBDDE0">
+                            <path d="M1.2,0 L21,0 C21.6627417,0 22.2,0.5372583 22.2,1.2 C22.2,1.8627417 21.6627417,2.4 21,2.4 L1.2,2.4 C0.5372583,2.4 0,1.8627417 0,1.2 C0,0.5372583 0.5372583,0 1.2,0 Z" id="矩形"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

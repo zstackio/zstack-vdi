@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import { Button, Alert, Divider, message} from 'antd'
+import { Button, Alert, message} from 'antd'
 import { useIntl } from 'umi';
 import SVG from 'react-inlinesvg';
 import useAxios from '@/utils/useAxios';
@@ -172,19 +172,18 @@ const VMPage: React.FC = () => {
               defaultMessage: '云桌面'
             })
           }</span>
-          <Button className={styles.button} icon={<img src={require('../../assets/refresh.png')} />} onClick={() => {
+          <Button className={styles.button} onClick={() => {
             refresh()
             message.info(intl.formatMessage({
               id: 'refresh',
               defaultMessage: '刷新'
             }))
           }}>
-            <span className={styles.buttonText}>{
-            intl.formatMessage({
+            <SVG src={require('../../assets/refresh.svg')}/>
+            {intl.formatMessage({
               id: 'refresh',
               defaultMessage: '刷新'
-            })
-          }</span>
+            })}
           </Button>
         </div>
 
@@ -195,8 +194,8 @@ const VMPage: React.FC = () => {
           })
         }
         </div>
-
-        <Divider />
+ 
+        <div className={styles.headerDivider}/>
 
         {
           otherCount > 0 &&
@@ -212,7 +211,7 @@ const VMPage: React.FC = () => {
             vmList?.map((vm, index) =>
               <div className={styles.vmCard} key={index}>
                 <div className={styles.vmImage}>
-                  <img src={require('../../assets/computer.png')}/>
+                  <SVG src={require('../../assets/computer.svg')}/>
                 </div>
                 <div className={styles.vmName}>{vm?.name}</div>
                 <div className={styles.vmState}>
@@ -225,7 +224,10 @@ const VMPage: React.FC = () => {
                     defaultMessage: '停止'
                   })}
                   <div className={styles.ipdivider} />
-                  {getDefaultIp(vm)}
+                  <span className={(vm?.vmNics && vm?.vmNics?.length > 0) ? null : styles.noip}>{(vm?.vmNics && vm?.vmNics?.length > 0) ? getDefaultIp(vm) : intl.formatMessage({
+                      id: 'noIpaddress',
+                      defaultMessage: '暂无IP地址'
+                    })}</span>
                 </div>
                 <div className={styles.divider}/>
                 <div className={styles.action}>

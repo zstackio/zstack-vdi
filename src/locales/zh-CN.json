@@ -12,6 +12,7 @@
   "loginTitle": "欢迎使用 ZStack VDI 管理平台",
   "logout": "退出",
   "noData": "暂无数据",
+  "noIpaddress": "暂无IP地址",
   "refresh": "刷新",
   "start": "启动",
   "state.Running": "运行中",
